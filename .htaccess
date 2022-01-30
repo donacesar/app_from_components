@@ -1,0 +1,4 @@
+# Start engine and passing the entire request to public/ folder
+
+RewriteEngine on
+RewriteRule ^(.+)?$ /public/$1

@@ -1,0 +1,12 @@
+# reassigning root directory to this folder
+RewriteBase /
+
+# if no file, no directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# if not find /favicon.ico (cancel second request to this folder)
+RewriteCond %{REQUEST_URI} !^/favicon.ico
+
+# all reausets goes to index.php
+RewriteRule . index.php
