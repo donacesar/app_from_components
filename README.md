@@ -1,4 +1,4 @@
 # app_from_components
 ``` 
-Simple blog application was made from external packages(components). 
+Simple user-admin application was made from external packages(components). 
 ```
